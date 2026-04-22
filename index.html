@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work From Home</title>
+    <title>Indian Success - Anita Desai</title>
     
     <script>
     !function(f,b,e,v,n,t,s)
@@ -14,134 +14,156 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '4380613462223935');
+    fbq('init', '1302171907885619');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=4380613462223935&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1302171907885619&ev=PageView&noscript=1"
     /></noscript>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1611974717482-98252c002234?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
             padding: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 400px;
-            width: 100%;
-            padding: 30px;
             text-align: center;
         }
-        .header-text {
-            color: #d32f2f;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .logo-container {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 25px;
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            border: 4px solid #4caf50;
-            overflow: hidden;
-        }
-        .logo-container img {
-            width: 100%;
-            height: 100%;
+            border: 3px solid #0088cc;
+            margin-top: 25px;
             object-fit: cover;
+            box-shadow: 0 0 25px rgba(0, 136, 204, 0.6);
         }
-        .features {
-            text-align: left;
-            margin-bottom: 30px;
+
+        h1 { margin-top: 15px; font-size: 26px; font-weight: bold; }
+        .sub-text { color: #888; font-size: 15px; margin-bottom: 20px; }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            padding: 15px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 360px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
-        .feature-item {
-            margin: 15px 0;
-            font-size: 16px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-        .check-icon {
-            color: #4caf50;
-            font-weight: bold;
-        }
-        .btn-telegram {
-            background-color: #0088cc;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
+
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            padding: 16px;
+            margin: 12px 0;
             border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
+            text-decoration: none;
+            font-weight: 800;
             font-size: 18px;
-            box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
-            transition: transform 0.2s;
+            transition: 0.3s;
+            text-transform: uppercase;
         }
-        .btn-telegram:active {
-            transform: scale(0.98);
+
+        .btn-telegram {
+            background: #0088cc;
+            color: white;
+            box-shadow: 0 5px 20px rgba(0, 136, 204, 0.4);
+            animation: pulse 1.5s infinite;
         }
-        .telegram-icon {
-            width: 24px;
-            margin-right: 10px;
+
+        .btn-hint {
+            background: rgba(0, 255, 127, 0.15);
+            color: #00ff7f;
+            border: 1px dashed #00ff7f;
+            font-size: 13px;
+            pointer-events: none;
         }
-        .footer-note {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #666;
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
         }
-        .fire {
-            margin-right: 5px;
+
+        .timer-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
         }
+
+        .timer-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px;
+            border-radius: 10px;
+            min-width: 90px;
+            border-bottom: 3px solid #0088cc;
+        }
+
+        .timer-num { font-size: 26px; font-weight: bold; color: #fff; }
+        .timer-label { font-size: 11px; color: #888; text-transform: uppercase; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="header-text">WORK FROM HOME 🏠</div>
-        
-        <div class="logo-container">
-            <img src="logo.png" alt="Profile Logo">
+    <img src="logo.png" alt="Anita Desai" class="profile-img">
+
+    <h1>Anita Desai 🇮🇳</h1>
+    <p class="sub-text">14,851 subscribers</p>
+
+    <div class="info-box">
+        <p>🎁 Get a bonus for subscription!</p>
+        <p style="font-size: 13px; margin-top: 6px; color: #aaa;">Anita Desai - helps Indian families Welcome!</p>
+    </div>
+
+    <a href="https://t.me/+NnTlU-7mcRM2NTc1" class="btn btn-telegram">
+        JOIN TELEGRAM FREE
+    </a>
+
+    <div class="btn btn-hint">
+        👇 CLICK THE BUTTON BELOW TO JOIN ✅
+    </div>
+
+    <a href="https://t.me/+NnTlU-7mcRM2NTc1" class="btn btn-telegram">
+        JOIN TELEGRAM FREE
+    </a>
+
+    <div class="timer-container">
+        <div class="timer-box">
+            <span class="timer-num" id="minutes">10</span>
+            <span class="timer-label">Minutes</span>
         </div>
-
-        <div class="features">
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>STUDENTS 📚</strong> पढ़ाई के साथ EXTRA INCOME</span>
-            </div>
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>HOUSEWIFE 🏠</strong> खाली समय का सही इस्तेमाल</span>
-            </div>
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>JOB SEEKERS 💼</strong> के नए SOURCE</span>
-            </div>
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>Handwriting Work Guidance</strong></span>
-            </div>
-        </div>
-
-        <a href="https://t.me/+MP0rIDYLn0s1OGJl" class="btn-telegram">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon" alt="TG">
-            APPLY NOW (TELEGRAM)
-        </a>
-
-        <div class="footer-note">
-            <span class="fire">🔥</span> Hurry! Limited Slots Available
+        <div class="timer-box">
+            <span class="timer-num" id="seconds">00</span>
+            <span class="timer-label">Seconds</span>
         </div>
     </div>
+
+    <script>
+        let time = 600; 
+        const minElem = document.getElementById('minutes');
+        const secElem = document.getElementById('seconds');
+
+        setInterval(() => {
+            if (time > 0) {
+                time--;
+                let mins = Math.floor(time / 60);
+                let secs = time % 60;
+                minElem.innerText = mins < 10 ? '0' + mins : mins;
+                secElem.innerText = secs < 10 ? '0' + secs : secs;
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
