@@ -107,7 +107,7 @@
             padding: 12px;
             border-radius: 10px;
             min-width: 90px;
-            border-bottom: 3px solid #0088cc;
+            border-bottom: 3px solid #e74c3c; /* Red border for urgency */
         }
 
         .timer-num { font-size: 26px; font-weight: bold; color: #fff; }
@@ -131,7 +131,7 @@
     </a>
 
     <div class="btn btn-hint">
-        👇 CLICK THE BUTTON BELOW TO JOIN ✅
+        👇 AUTO REDIRECTING IN 10 SECONDS ✅
     </div>
 
     <a href="https://t.me/+NnTlU-7mcRM2NTc1" class="btn btn-telegram">
@@ -140,27 +140,27 @@
 
     <div class="timer-container">
         <div class="timer-box">
-            <span class="timer-num" id="minutes">10</span>
+            <span class="timer-num" id="minutes">00</span>
             <span class="timer-label">Minutes</span>
         </div>
         <div class="timer-box">
-            <span class="timer-num" id="seconds">00</span>
+            <span class="timer-num" id="seconds">10</span>
             <span class="timer-label">Seconds</span>
         </div>
     </div>
 
     <script>
-        let time = 600; 
-        const minElem = document.getElementById('minutes');
+        let time = 10; // Timer set to 10 seconds
         const secElem = document.getElementById('seconds');
+        const telegramLink = "https://t.me/+NnTlU-7mcRM2NTc1";
 
-        setInterval(() => {
-            if (time > 0) {
-                time--;
-                let mins = Math.floor(time / 60);
-                let secs = time % 60;
-                minElem.innerText = mins < 10 ? '0' + mins : mins;
-                secElem.innerText = secs < 10 ? '0' + secs : secs;
+        const countdown = setInterval(() => {
+            time--;
+            secElem.innerText = time < 10 ? '0' + time : time;
+
+            if (time <= 0) {
+                clearInterval(countdown);
+                window.location.href = telegramLink; // Auto Redirect
             }
         }, 1000);
     </script>
