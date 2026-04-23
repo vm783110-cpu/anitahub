@@ -20,6 +20,7 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1302171907885619&ev=PageView&noscript=1"
     /></noscript>
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
         
@@ -57,7 +58,7 @@
             border-radius: 12px;
             width: 100%;
             max-width: 360px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             border: 1px solid rgba(255,255,255,0.1);
         }
 
@@ -65,12 +66,12 @@
             display: block;
             width: 100%;
             max-width: 320px;
-            padding: 16px;
-            margin: 12px 0;
+            padding: 20px;
+            margin: 15px 0;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 800;
-            font-size: 18px;
+            font-size: 20px;
             transition: 0.3s;
             text-transform: uppercase;
         }
@@ -78,22 +79,21 @@
         .btn-telegram {
             background: #0088cc;
             color: white;
-            box-shadow: 0 5px 20px rgba(0, 136, 204, 0.4);
+            box-shadow: 0 5px 25px rgba(0, 136, 204, 0.5);
             animation: pulse 1.5s infinite;
-        }
-
-        .btn-hint {
-            background: rgba(0, 255, 127, 0.15);
-            color: #00ff7f;
-            border: 1px dashed #00ff7f;
-            font-size: 13px;
-            pointer-events: none;
         }
 
         @keyframes pulse {
             0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
+            50% { transform: scale(1.05); }
             100% { transform: scale(1); }
+        }
+
+        .redirect-text {
+            color: #00ff7f;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: bold;
         }
 
         .timer-container {
@@ -107,7 +107,7 @@
             padding: 12px;
             border-radius: 10px;
             min-width: 90px;
-            border-bottom: 3px solid #e74c3c; /* Red border for urgency */
+            border-bottom: 3px solid #e74c3c;
         }
 
         .timer-num { font-size: 26px; font-weight: bold; color: #fff; }
@@ -130,27 +130,23 @@
         JOIN TELEGRAM FREE
     </a>
 
-    <div class="btn btn-hint">
-        👇 AUTO REDIRECTING IN 10 SECONDS ✅
-    </div>
-
-    <a href="https://t.me/+NnTlU-7mcRM2NTc1" class="btn btn-telegram">
-        JOIN TELEGRAM FREE
-    </a>
+    <p class="redirect-text">
+        ✅ REDIRECTING TO PRIVATE CHANNEL IN:
+    </p>
 
     <div class="timer-container">
         <div class="timer-box">
             <span class="timer-num" id="minutes">00</span>
-            <span class="timer-label">Minutes</span>
+            <span class="timer-label">Min</span>
         </div>
         <div class="timer-box">
             <span class="timer-num" id="seconds">10</span>
-            <span class="timer-label">Seconds</span>
+            <span class="timer-label">Sec</span>
         </div>
     </div>
 
     <script>
-        let time = 10; // Timer set to 10 seconds
+        let time = 10; 
         const secElem = document.getElementById('seconds');
         const telegramLink = "https://t.me/+NnTlU-7mcRM2NTc1";
 
@@ -160,7 +156,7 @@
 
             if (time <= 0) {
                 clearInterval(countdown);
-                window.location.href = telegramLink; // Auto Redirect
+                window.location.href = telegramLink; 
             }
         }, 1000);
     </script>
